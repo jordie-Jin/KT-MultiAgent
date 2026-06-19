@@ -1,7 +1,19 @@
 {
   "permissions": {
     "allow": [
-      "Bash(./gradlew compileJava)"
-    ]
+      "Bash(./gradlew compileJava)",
+      "Bash(git --version)",
+      "Bash(git fetch *)",
+      "Bash(git branch *)",
+      "PowerShell(pip install *)",
+      "PowerShell(python -c \"import reportlab; print\\('reportlab', reportlab.Version\\)\")",
+      "PowerShell(python \"C:\\\\Users\\\\user\\\\Desktop\\\\project1\\\\docs\\\\make_plan_pdf.py\")",
+      "PowerShell($f = \"C:\\\\Users\\\\user\\\\Desktop\\\\project1\\\\docs\\\\로그분석_자동화시스템_기획서.pdf\"; if \\(Test-Path $f\\) { $i = Get-Item $f; \"OK  $\\($i.Name\\)  \\($\\([math]::Round\\($i.Length/1KB,1\\)\\) KB\\)\" } else { \"NOT FOUND\" })",
+      "PowerShell(npm install *)",
+      "Bash(python -c \"import reportlab; print\\('reportlab', reportlab.Version\\)\")",
+      "Bash(python -c \"import fitz; print\\('pymupdf', fitz.__doc__[:30]\\)\")",
+      "Bash(python -c \"import PIL; print\\('pillow', PIL.__version__\\)\")"
+    ],
+    "defaultMode": "bypassPermissions"
   }
 }
